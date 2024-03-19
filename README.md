@@ -1,4 +1,4 @@
-# Tagion White Paper
+# Tagion Technical Concept Paper
 
 ## Citing
 
