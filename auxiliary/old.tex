@@ -1,0 +1,125 @@
+%     \begin{itemize}
+%         \item Deterministic Consensus: From a technical standpoint, this ensures scalability. However, on the business front, such determinism paves the way for secure and reliable financial transactions.
+%         \item Fair Transaction Ordering: With the hashgraph, all transactions are processed in a fair order, eliminating the possibility of front-running, thereby making it an ideal choice for trading and exchange platforms.
+%         \item Resource Efficiency and Environmental Friendliness: The Tagion HashGraph is remarkably efficient in terms of energy consumption. Notably, no work by the nodes in the hashgraph is wasted. For context, while Tagion expends less than 0.001 kW/h per transaction, Ethereum's energy consumption stands at approximately 0.03 kW/h per transaction, consequently Tagion is consuming 30 timers less energy than Ethereum.
+%     \end{itemize}
+    
+%     In essence, determinism as offered by the HashGraph ensures complete confidence for users and businesses in the state of their transactions. Unlike other systems where time only offer probabilistic security, with the HashGraph, there's no ambiguity. For businesses, especially, the clarity and certainty in transaction status are crucial for maintaining complete transparency and trust in their operations.
+
+
+
+% \subsection{Efficient and Sustainable Data Management} %Commercial (Nicolai)
+%     The DART boasts a dynamic data structure. Unlike traditional blockchains where operations are limited to data creation and reading, the DART supports updates and deletions without compromising data integrity. This means no more hoarding of obsolete data just to maintain system consistency. The result? More efficient data storage, simpler data management, and reduced administrative costs—empowering businesses to operate more effectively and economically.
+% \pagebreak
+
+% \subsection{Unified Truth through Node Swapping} %Commercial (Nicolai)
+% In today's digital era, it's imperative to have a singular, untampered source of truth, ensuring no duplication of assets or data. Whether it's businesses collaborating in the supply chain or managing digital assets, everyone must be on the same page. Node swapping introduces a permissionless system where data remains immutable—no single actor has the power to alter data. This translates to undeniable trust without relying on a central authority. For businesses, this means seamless collaboration with confidence in data accuracy. For asset managers, it guarantees transparency and trustworthiness in their investments for the benefit clientele. The result? A world where data and asset ownership is clear and trustworthy—a monumental advantage in our increasingly digital landscape.
+
+% \subsection{Uncompromised Data Security} %Commercial (Nicolai)
+% In the digital age, data security is a paramount concern across all industries. Permissionless systems pose challenges since operators' identities remain unknown. This opens the door to potential threats, like Sybil attacks, where malicious entities might attempt to dominate the network by creating multiple nodes, risking data integrity. Enter Tagion's innovative staking model: by requiring participants to allocate tokens for network participation, it introduces a substantial barrier to entry. Beyond just a protective measure, this staking acts as a monetary incentive, encouraging participants to adhere to established protocols. 
+     
+% %Swapping, famous incentive structure slashing skal være aktiv i lang tidv kan ikke bare sætte penge af og så vente 3 år
+
+% \section{Smart Contract execution flow}
+
+% A smart contract contains a list DART-indices, list of signatures and the contract method.
+
+
+% 1. The inputs of a smart contract are read from the DART-indcies.
+% 2. The inputs contain an owner key which should be checked against the signature
+% 3. If the owner ship of the input is correctly veryfied then the method is executed and the contrat produces a list of output including a new owner key.
+% 4. The contract is then send to the network(Hashgraph)
+% 5. After the network produces an order list of contract the DART is updated. This means that all inputs are removed and the produced outputs are added to the DART
+
+%This paper describes the implementation of a \acrfull{dlt} system which solves the \textbf{3 aspects of the trilemma} better than any current system. The system distinguishes itself technically in \textit{4 key ways}: The consensus protocol, the data storage method, the swapping algorithm, and its use of time-based staking. The system uses the \textit{Hashgraph algorithm} as its \acrfull{abft} consensus protocol. The protocol's asymptotic communication complexity is quadratic (theoretically optimal), making the effective throughput of the system significantly greater than blockchain alternatives. Moreover, it has deterministic finality; the finality allows for ordering of activity, and great \textbf{scalability} when combined with the second distinguishing feature: the \textit{\acrshort{dart}}. The \acrfull{dart} saves data in a hash invariant database, allowing the system to be stateless. Lastly, the system uses \textit{swapping} to achieve \textbf{decentralisation}, while maintaining \textbf{security} by using \textit{time-based staking}. Tagion isn't just another \acrshort{dlt}; it's a fundamentally new infrastructure that is scalable, secure, decentralised, fair, and sustainable.
+
+@article{LNAS,
+  title = {Lightning Network and Atomic Swaps},
+  howpublished = {\url{https://medium.com/stakenet/lightning-network-and-atomic-swaps-f24eb4996eb9}},
+  note = {Accessed: 2019-08-23}
+}
+@article{ASSFEP,
+  title = {Atomic swaps: a simple, fair exchange protocol},
+  howpublished = {\url{https://medium.com/blockchainio/what-are-atomic-swaps-bc1d034634c9}},
+  note = {Accessed: 2019-08-24}
+}
+
+@proceedings{ELINOR_OSTROM_NOBEL_LECTURE,
+  title = {Prize Lecture: Beyond Markets and States: Polycentric Governance of Complex Economic Systems},
+  author = {Ostrom, Elinor},
+  howpublished = {\url{https://www.nobelprize.org/prizes/economic-sciences/2009/ostrom/lecture/}},
+  note = {Accessed: 2018-07-02},
+  URL = {https://www.nobelprize.org/prizes/economic-sciences/2009/ostrom/lecture/}
+}
+
+@article{ALLEN_CHRISTOPHER,
+  title = {A Revised "Ostrom's Design Principles for Collective Governance of the Commons or How to Avoid the Tragedy of the Commons within Self-Organizing Systems},
+  author = {Christopher, Allen},
+  howpublished = {\url{http://www.lifewithalacrity.com/2015/11/a-revised-ostroms-design-principles-for-collective-governance-of-the-commons-.html}},
+  note = {Accessed: 2019-09-18}
+}
+
+@article{10.1257/aer.100.3.641,
+Author = {Ostrom, Elinor},
+Title = {Beyond Markets and States: Polycentric Governance of Complex Economic Systems},
+Journal = {American Economic Review},
+Volume = {100},
+Number = {3},
+Year = {2010},
+Month = {06},
+Pages = {641-72},
+DOI = {10.1257/aer.100.3.641},
+URL = {http://www.aeaweb.org/articles?id=10.1257/aer.100.3.641}}
+
+@article{10.2139/ssrn.997834,
+Author = {Ostrom, Elinor},
+Title = {Sustainable Social-Ecological Systems: An Impossibility?},
+Year = {2007},
+DOI = {10.2139/ssrn.997834},
+URL = {https://ssrn.com/abstract=997834}}
+
+@book{ostrom2006,
+Author = {Ostrom, E. and Gardner, R. and Walker, J.},
+Title = {Rules, games, and common-pool resources},
+Year = {2006},
+Publisher = {University of Michigan Press}
+}
+
+@article{britannica_monetarism,
+Author = {The Editors of Encyclopaedia Britannica},
+Title = {Monetarism, Economics},
+URL = {https://www.britannica.com/topic/monetarism},
+note = {Accessed: 2018-03-12}
+}
+
+@article{friedman_counter,
+Author = {Friedman, Milton},
+Title = {The Counter-Revolution in Monetary Theory},
+Journal = {IEA Occasional Paper},
+Number = {33},
+Year = {1970},
+URL = {https://miltonfriedman.hoover.org/friedman_images/Collections/2016c21/IEA_1970.pdf}}
+
+@article{libp2p,
+Author = {libp2p, githib team},
+Title = {Modular peer-to-peer networking stack},
+URL = {https://github.com/libp2p},
+journal = "placeholder",
+year = "0"
+}
+
+@article{wavefront_patent,
+Author = {Carsten, Bleser Rasmussen},
+Journal = {US20210227027A1},
+note = {Owner: i25s AG},
+Year = {2020},
+Title ={System and a method implementing a directed acyclic graph (dag) consensus algorithm via a gossip protocol}
+}
+
+@article{dart_patent,
+Author = {Carsten, Bleser Rasmussen},
+Journal = {US20210067330A1},
+note = {Owner: i25s AG},
+Year = {2020},
+Title = {Sparsed merkle tree method and system for processing sets of data for storing and keeping track of the same in a specific network}
+}

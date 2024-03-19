@@ -1,0 +1,70 @@
+%Acronyms used in the paper
+\newacronym{dart}{DART}{Distributed Archive of Random Transactions}
+\newacronym{udr}{UDR}{Unpredictable Deterministic Random}
+\newacronym{dlt}{DLT}{Distributed Ledger Technology}
+\newacronym{abft}{aBFT}{asynchronous Byzantine Fault Tolerant}
+\newacronym{smt}{SMT}{Sparse Merkle Tree}
+\newacronym{tgn}{TGN}{Tagion tokens}
+\newacronym{tvm}{TVM}{Tagion Virtual Machine}
+\newacronym{abp}{ABP}{Atomic Broadcast Protocol}
+
+
+%glossaries used in the paper
+\newglossaryentry{bullseye}
+{
+    name = bullseye,
+    description = {The merkle root of the \gls{dart}, that is, a single hash representing the state of the entire Tagion system}
+}
+\newglossaryentry{trilemma}
+{
+    name = trilemma,
+    description = {The challenge of simultaneously achieving security, decentralisation, and scalability in a \gls{dlt} system}
+}
+\newglossaryentry{wavefront protocol}
+{
+    name = Wavefront Protocol,
+    description = {The communication protocol Tagion uses to achieve asymptotically minimal communication complexity}
+}
+\newglossaryentry{finality}
+{
+    name = finality,
+    description = {An attribute of a \gls{dlt}-system where once a message is ordered its order never changes. A weaker form of (deterministic) finality, is probabilistic finality where the probability of the order changing goes toward 0}
+}
+\newglossaryentry{liveness}{
+  name={liveness},
+  description={An attribute of a \gls{dlt}-system that ensures the system continues to operate and make progress, even in the presence of faults or adverse conditions}
+}
+
+
+\newglossaryentry{blockchain}
+{
+    name = blockchain,
+    description = {
+        A decentralised \gls{dlt} system consisting of chains of blocks storing transactions. The longest chain of blocks is defined to be the consensus. Blockchain is what Ethereum and Bitcoin is built upon
+    }
+}
+
+%Old glossaries:
+% \newacronym{dht}{DHT}{Distributed Hash Table}
+% \newacronym{pia}{PIA}{Parameter Indexed Archive}
+% \newacronym{nnc}{NNC}{Network Name Card}
+% \newacronym{ncl}{NCL}{Name Card Label}
+% \newacronym{ncr}{NCR}{Name Card Record}
+% \newacronym{nnr}{NNR}{Network Node Record}
+% \newacronym{tmn}{TMN}{Tagion Main Network}
+% \newacronym{tsn}{TSN}{Tagion Sub Network}
+% \newacronym{tsnf}{TSNF}{Tagion Sub Network Funds}
+% \newacronym{tsna}{TSNA}{Tagion Sub Network Account}
+% \newacronym{pow}{PoW}{Proof Of Work}
+% \newacronym{ln}{LN}{Lightning Network}
+% \newacronym{dex}{DEX}{Decentralised Exchange}
+% \newacronym{htlc}{HTLC}{Hashed Time Lock Contract}
+% \newacronym{msig}{MultSig}{Multi Signature}
+% \newacronym{tn}{TN}{Tagion Network}
+% \newacronym{alc}{ALC}{alien-currency}
+% \newacronym{bft}{BFT}{Byzantine Fault Tolerant}
+% \newacronym{ato}{ATO}{Ask Trade Orders}
+% \newacronym{bto}{BTO}{Bid Trade Orders}
+% \newacronym{hibon}{HiBON}{Hash-invariant Binary Object Notation}
+% \newacronym{bson}{BSON}{Binary JSON}
+% \newacronym{hirpc}{HiRPC}{Hash invariant Remote Procedure Call}

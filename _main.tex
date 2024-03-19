@@ -1,0 +1,30 @@
+\documentclass[a4paper]{article}
+
+\input{auxiliary/preamble}
+
+\begin{document}
+
+    \input{auxiliary/titlepage}
+    \input{chapters/0_abstract}
+    
+    \tableofcontents
+    \pagebreak
+    
+    \input{chapters/1_introduction}
+    \input{chapters/2_hashgraph}
+    \input{chapters/3_scalability}
+    \input{chapters/4_decentralisation}
+    \input{chapters/5_security}
+    \input{chapters/6_system_architecture}
+
+    \begin{appendices}
+        %\input{appendix 1} etc.
+    \end{appendices}
+    
+    \printglossary 
+    \printglossary[type=\acronymtype]
+    \listoffigures
+    \bibliographystyle{plain}
+    \bibliography{auxiliary/references}
+
+\end{document}
